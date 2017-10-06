@@ -1,5 +1,4 @@
-library(ROCR)
-fun.auc <- function(pred,obs){
+roc_auc <- function(pred,obs){
   # Run the ROCR functions for AUC calculation
   ROC_perf <- performance(prediction(pred,obs),"tpr","fpr")
   ROC_sens <- performance(prediction(pred,obs),"sens","spec")
