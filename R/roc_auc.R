@@ -26,4 +26,4 @@ fun.auc <- function(pred,obs){
 }
 
 
-print(fun.auc(preds,df1$Y))
+#print(fun.auc(preds,df1$Y))
